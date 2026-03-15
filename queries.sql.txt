@@ -1,0 +1,17 @@
+-- Insert student
+INSERT INTO Students VALUES (1,'Shravani','shravanij@email.com','CSE');
+
+-- Insert company
+INSERT INTO Companies VALUES (1,'Google','Bangalore');
+
+-- Insert application
+INSERT INTO Applications VALUES (1,1,1,'Software Intern','Applied');
+
+-- View all applications
+SELECT * FROM Applications;
+
+-- Join query to view student applications
+SELECT Students.name, Companies.company_name, Applications.role, Applications.status
+FROM Applications
+JOIN Students ON Applications.student_id = Students.student_id
+JOIN Companies ON Applications.company_id = Companies.company_id;
