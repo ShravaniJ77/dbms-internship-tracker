@@ -1,11 +1,11 @@
 -- Insert student
-INSERT INTO Students VALUES (1,'Shravani','shravanij@email.com','CSE');
+INSERT INTO Students VALUES (1JS1,'Shravani','shravanij@email.com','CSE');
 
 -- Insert company
 INSERT INTO Companies VALUES (1,'Google','Bangalore');
 
 -- Insert application
-INSERT INTO Applications VALUES (1,1,1,'Software Intern','Applied');
+INSERT INTO Applications VALUES (1,1JS1,1,'Software Intern','Applied');
 
 -- View all applications
 SELECT * FROM Applications;
